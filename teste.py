@@ -76,6 +76,6 @@ elif opcao == "4":
     
 
 else:
-    print("Opção inválida!")
+    print("\nOpção inválida!")
 
    
