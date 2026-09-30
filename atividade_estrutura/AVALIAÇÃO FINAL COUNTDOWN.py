@@ -165,6 +165,17 @@ def mostrar_livros():
         print(f"Quantidade: {livro[4]}")
         print("-----------------------------")
 
+def excluir_livros():
+
+    codigo_busca = int(input("Código do livro: "))
+
+    for livro in livros:
+         if livro[0] == codigo_busca:
+
+            livros.remove(livro)
+            print("Livro excluído!")
+            return
+
 
 # PROGRAMA PRINCIPAL
 
@@ -179,6 +190,7 @@ while True:
     print("4 - Sair")
     print("5 - Mostrar alunos cadastrados")
     print("6 - Mostrar livros cadastrados")
+    print("7 - excluir livro")
 
     opcao = input("Escolha uma opção: ")
 
@@ -207,6 +219,10 @@ while True:
 
         mostrar_livros()
 
+    elif opcao == "7":
+        excluir_livros()
+
     else:
 
         print("Opção inválida!")
+#preciso terminar ainda professor me da mais uma chance :,( 
